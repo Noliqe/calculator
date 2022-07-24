@@ -1,0 +1,75 @@
+@media only screen and (min-width: 600px) {
+}
+html {
+    background-color: #1d1d1c;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 1em;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 20.8em;
+    margin: auto;
+}
+
+button{
+    background-color: rgb(37, 218, 127);
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 1.8em;
+    border-radius: 0.3em;
+    height: 2.65em;
+    width: 2.7em;
+    margin-top: 0.1em;
+};
+
+#allClearButton {
+    background-color: rgb(35, 218, 218);
+}
+
+#allClearButton, #clearButton, #percentageButton, #plusMinusButton {
+    background-color: rgb(35, 218, 218);
+}
+
+#divideButton, #multiplyButton, #substractButton, #addButton, #equalButton {
+    background-color: #bedf2b;
+}
+
+#zeroButton {
+    width: 5.5em;
+}
+
+#container {
+    border: 2px solid rgb(128, 125, 125);
+    background-color: rgb(36, 35, 35);;
+    border-radius: 0.5em;
+    width: 21em;
+    height: 35em;
+    padding: 0.6em;
+}
+
+#display {
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(206, 193, 174);
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+#displaySolution {
+    color: rgb(0, 0, 0);
+    font-size: 6em;
+}
+
+#displayInput {
+    color: rgb(0, 0, 0);
+    font-size: 6em;
+}
