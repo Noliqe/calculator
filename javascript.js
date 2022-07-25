@@ -29,9 +29,10 @@ displayInput.textContent = '';
 // display solution text
 displaySolution.textContent = '';
 
+
 // buttons addEventListeners
 oneButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCalculation();}
-    displayInput.textContent +=(1); displayText.textContent = '';
+    displayInput.textContent +=(1); displayText.textContent = ''; operateOneAtATime = 0;
     buttonColor(); oneButton.setAttribute('style', 'background-color: #2cf882;'); removeColorNumbers();
     if (displaySolution.textContent != '') {
         displaySolution.textContent = '';
@@ -40,7 +41,7 @@ oneButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCalc
     else if (sumZeroOne === 1) {b += (1);}
 });
 twoButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCalculation();}
-    displayInput.textContent +=(2); displayText.textContent = '';
+    displayInput.textContent +=(2); displayText.textContent = ''; operateOneAtATime = 0;
     buttonColor(); twoButton.setAttribute('style', 'background-color: #2cf882;'); removeColorNumbers();
     if (displaySolution.textContent != '') {
         displaySolution.textContent = '';
@@ -49,7 +50,7 @@ twoButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCalc
     else if (sumZeroOne === 1) {b += (2);}
 })
 threeButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCalculation();}
-    displayInput.textContent +=(3); displayText.textContent = '';
+    displayInput.textContent +=(3); displayText.textContent = ''; operateOneAtATime = 0;
     buttonColor();  threeButton.setAttribute('style', 'background-color: #2cf882;'); removeColorNumbers();
     if (displaySolution.textContent != '') {
         displaySolution.textContent = '';
@@ -58,7 +59,7 @@ threeButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCa
     else if (sumZeroOne === 1) {b += (3);}
 })
 fourButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCalculation();}
-    displayInput.textContent +=(4); displayText.textContent = '';
+    displayInput.textContent +=(4); displayText.textContent = ''; operateOneAtATime = 0;
     buttonColor();  fourButton.setAttribute('style', 'background-color: #2cf882;'); removeColorNumbers();
     if (displaySolution.textContent != '') {
         displaySolution.textContent = '';
@@ -67,7 +68,7 @@ fourButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCal
     else if (sumZeroOne === 1) {b += (4);}
 })
 fiveButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCalculation();}
-    displayInput.textContent +=(5); displayText.textContent = '';
+    displayInput.textContent +=(5); displayText.textContent = ''; operateOneAtATime = 0;
     buttonColor(); fiveButton.setAttribute('style', 'background-color: #2cf882;'); removeColorNumbers();
     if (displaySolution.textContent != '') {
         displaySolution.textContent = '';
@@ -76,7 +77,7 @@ fiveButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCal
     else if (sumZeroOne === 1) {b += (5);}
 })
 sixButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCalculation();}
-    displayInput.textContent +=(6); displayText.textContent = '';
+    displayInput.textContent +=(6); displayText.textContent = ''; operateOneAtATime = 0;
     buttonColor(); sixButton.setAttribute('style', 'background-color: #2cf882;'); removeColorNumbers();
     if (displaySolution.textContent != '') {
         displaySolution.textContent = '';
@@ -85,7 +86,7 @@ sixButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCalc
     else if (sumZeroOne === 1) {b += (6);}
 })
 sevenButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCalculation();}
-    displayInput.textContent +=(7); displayText.textContent = '';
+    displayInput.textContent +=(7); displayText.textContent = ''; operateOneAtATime = 0;
     buttonColor(); sevenButton.setAttribute('style', 'background-color: #2cf882;'); removeColorNumbers();
     if (displaySolution.textContent != '') {
         displaySolution.textContent = '';
@@ -94,7 +95,7 @@ sevenButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCa
     else if (sumZeroOne === 1) {b += (7);}
 })
 eightButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCalculation();}
-    displayInput.textContent +=(8); displayText.textContent = '';
+    displayInput.textContent +=(8); displayText.textContent = ''; operateOneAtATime = 0;
     buttonColor(); eightButton.setAttribute('style', 'background-color: #2cf882;'); removeColorNumbers();
     if (displaySolution.textContent != '') {
         displaySolution.textContent = '';
@@ -103,7 +104,7 @@ eightButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCa
     else if (sumZeroOne === 1) {b += (8);}
 })
 nineButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCalculation();}
-    displayInput.textContent +=(9); displayText.textContent = '';
+    displayInput.textContent +=(9); displayText.textContent = ''; operateOneAtATime = 0;
     buttonColor(); nineButton.setAttribute('style', 'background-color: #2cf882;'); removeColorNumbers();
     if (displaySolution.textContent != '') {
         displaySolution.textContent = '';
@@ -112,7 +113,7 @@ nineButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCal
     else if (sumZeroOne === 1) {b += (9);}
 })
 zeroButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCalculation();}
-    displayInput.textContent +=(0); displayText.textContent = '';
+    displayInput.textContent +=(0); displayText.textContent = ''; operateOneAtATime = 0;
     buttonColor(); zeroButton.setAttribute('style', 'background-color: #2cf882;'); removeColorNumbers();
     if (displaySolution.textContent != '') {
         displaySolution.textContent = '';
@@ -121,37 +122,34 @@ zeroButton.addEventListener('click', () => {if (equalZeroOne === 1) {allClearCal
     else if (sumZeroOne === 1) {b += (0);}
 })
 
+
 // divide
 divideButton.addEventListener('click', () => {displayInput.textContent =('');
-divideButton.setAttribute('style', 'background-color: #faa527;') ; 
 plusOrMinus = 0; dotZeroOne = 0; equalZeroOne = 0;
-if (operatoZeroOneTwo === 0) {operateContainer = ('/'); sumZeroOne = 1; operatoZeroOneTwo = 1;}
-else if (operatoZeroOneTwo === 1) { operate(); operateContainer = ('/'); sumZeroOne = 0; operatoZeroOneTwo = 2; a = ''; b = '';}
-else if (operatoZeroOneTwo === 2) { operate(); operateContainer = ('/'); a = ''; b = '';}});
+if (operatoZeroOneTwo === 0 && operateOneAtATime === 0) {operateContainer = ('/'); sumZeroOne = 1; operatoZeroOneTwo = 1; operateOneAtATime = 1; divideButton.setAttribute('style', 'background-color: #faa527;') ; }
+else if (operatoZeroOneTwo === 1 && operateOneAtATime === 0) { operate(); operateContainer = ('/'); sumZeroOne = 0; operatoZeroOneTwo = 2; a = ''; b = ''; operateOneAtATime = 1; divideButton.setAttribute('style', 'background-color: #faa527;') ; }
+else if (operatoZeroOneTwo === 2 && operateOneAtATime === 0) { operate(); operateContainer = ('/'); a = ''; b = ''; operateOneAtATime = 1; divideButton.setAttribute('style', 'background-color: #faa527;') ; }});
 
 // multiply
 multiplyButton.addEventListener('click', () => {displayInput.textContent =(''); 
-multiplyButton.setAttribute('style', 'background-color: #faa527;'); 
 plusOrMinus = 0; dotZeroOne = 0; equalZeroOne = 0;
-if (operatoZeroOneTwo === 0) {operateContainer = ('*'); sumZeroOne = 1; operatoZeroOneTwo = 1;}
-else if (operatoZeroOneTwo === 1) { operate(); operateContainer = ('*'); sumZeroOne = 0; operatoZeroOneTwo = 2; a = ''; b = '';}
-else if (operatoZeroOneTwo === 2) { operate(); operateContainer = ('*'); a = ''; b = '';}});
+if (operatoZeroOneTwo === 0 && operateOneAtATime === 0) {operateContainer = ('*'); sumZeroOne = 1; operatoZeroOneTwo = 1; operateOneAtATime = 1; multiplyButton.setAttribute('style', 'background-color: #faa527;'); }
+else if (operatoZeroOneTwo === 1 && operateOneAtATime === 0) { operate(); operateContainer = ('*'); sumZeroOne = 0; operatoZeroOneTwo = 2; a = ''; b = ''; operateOneAtATime = 1; multiplyButton.setAttribute('style', 'background-color: #faa527;'); }
+else if (operatoZeroOneTwo === 2 && operateOneAtATime === 0) { operate(); operateContainer = ('*'); a = ''; b = ''; operateOneAtATime = 1; multiplyButton.setAttribute('style', 'background-color: #faa527;'); }});
 
 // substract
-substractButton.addEventListener('click', () => {displayInput.textContent =(''); 
-substractButton.setAttribute('style', 'background-color: #faa527;') ; 
+substractButton.addEventListener('click', () => {displayInput.textContent =('');  
 plusOrMinus = 0; dotZeroOne = 0; equalZeroOne = 0;
-if (operatoZeroOneTwo === 0) {operateContainer = ('-'); sumZeroOne = 1; operatoZeroOneTwo = 1;}
-else if (operatoZeroOneTwo === 1) { operate(); operateContainer = ('-'); sumZeroOne = 0; operatoZeroOneTwo = 2; a = ''; b = '';}
-else if (operatoZeroOneTwo === 2) {operate(); operateContainer = ('-'); a = ''; b = '';}});
+if (operatoZeroOneTwo === 0 && operateOneAtATime === 0) {operateContainer = ('-'); sumZeroOne = 1; operatoZeroOneTwo = 1; operateOneAtATime = 1; substractButton.setAttribute('style', 'background-color: #faa527;') ;}
+else if (operatoZeroOneTwo === 1 && operateOneAtATime === 0) { operate(); operateContainer = ('-'); sumZeroOne = 0; operatoZeroOneTwo = 2; a = ''; b = ''; operateOneAtATime = 1; substractButton.setAttribute('style', 'background-color: #faa527;') ;}
+else if (operatoZeroOneTwo === 2 && operateOneAtATime === 0) {operate(); operateContainer = ('-'); a = ''; b = ''; operateOneAtATime = 1; substractButton.setAttribute('style', 'background-color: #faa527;') ;}});
 
 // add
-addButton.addEventListener('click', () => {displayInput.textContent =(''); 
-addButton.setAttribute('style', 'background-color: #faa527;') ; 
+addButton.addEventListener('click', () => {displayInput.textContent =('');  
 plusOrMinus = 0; dotZeroOne = 0; equalZeroOne = 0;
-if (operatoZeroOneTwo === 0) {operateContainer += ('+'); sumZeroOne = 1; operatoZeroOneTwo = 1;}
-else if (operatoZeroOneTwo === 1) { operate(); operateContainer = ('+'); sumZeroOne = 0; operatoZeroOneTwo = 2; a = ''; b = '';}
-else if (operatoZeroOneTwo === 2) { operate(); operateContainer = ('+'); a = ''; b = '';}});
+if (operatoZeroOneTwo === 0 && operateOneAtATime === 0) {operateContainer += ('+'); sumZeroOne = 1; operatoZeroOneTwo = 1; operateOneAtATime = 1; addButton.setAttribute('style', 'background-color: #faa527;');}
+else if (operatoZeroOneTwo === 1 && operateOneAtATime === 0) { operate(); operateContainer = ('+'); sumZeroOne = 0; operatoZeroOneTwo = 2; a = ''; b = ''; operateOneAtATime = 1; addButton.setAttribute('style', 'background-color: #faa527;');}
+else if (operatoZeroOneTwo === 2 && operateOneAtATime === 0) { operate(); operateContainer = ('+'); a = ''; b = ''; operateOneAtATime = 1; addButton.setAttribute('style', 'background-color: #faa527;');}});
 
 // plus or minus
 plusMinusButton.addEventListener('click', () => {plusMinusButton.setAttribute('style', 'background-color: #68fcfc;'); removeColor();
@@ -164,18 +162,18 @@ plusMinusButton.addEventListener('click', () => {plusMinusButton.setAttribute('s
     else if (sumZeroOne === 1 && plusOrMinus === 1) {b = Math.abs(b); displayInput.textContent = (b); plusOrMinus = 0;}}})
 
 // dot
-dotButton.addEventListener('click', () => {displayInput.textContent +=('.');  dotButton.setAttribute('style', 'background-color: #2cf882;'); removeColorNumbers();
-if ( sumZeroOne === 0 && dotZeroOne === 0) {a += ('.'); dotZeroOne = 1;}
-else if (sumZeroOne === 1 && dotZeroOne === 0) {b += ('.'); dotZeroOne = 1;}})
+dotButton.addEventListener('click', () => {  dotButton.setAttribute('style', 'background-color: #2cf882;'); removeColorNumbers();
+if ( sumZeroOne === 0 && dotZeroOne === 0) {a += ('.'); displayInput.textContent +=('.'); dotZeroOne = 1;}
+else if (sumZeroOne === 1 && dotZeroOne === 0) {b += ('.'); displayInput.textContent +=('.'); dotZeroOne = 1;}})
 
 // all clear
 allClearButton.addEventListener('click', () => { allClearButton.setAttribute('style', 'background-color: #68fcfc;'); 
-removeColor(); plusOrMinus = 0; dotZeroOne = 0; displayText.textContent = ''; equalZeroOne = 0;
+removeColor(); plusOrMinus = 0; dotZeroOne = 0; displayText.textContent = ''; equalZeroOne = 0; operateOneAtATime = 0;
 displayInput.textContent =(''); displaySolution.textContent = ''; sumZeroOne = 0; operateContainer = ''; operatoZeroOneTwo = 0; totalSum = ''; a = ''; b = '';})
 
 // clear last input
 clearButton.addEventListener('click', () => {clearButton.setAttribute('style', 'background-color: #68fcfc;'); removeColor(); clearCalculation(); 
-plusOrMinus = 0; dotZeroOne = 0; displayText.textContent = ''; equalZeroOne = 0;})
+plusOrMinus = 0; dotZeroOne = 0; displayText.textContent = ''; equalZeroOne = 0; operateOneAtATime = 0;})
 
 // equal 
 equalButton.addEventListener('click', () => {equalButton.setAttribute('style', 'background-color: #faa527;'); removeColor(); 
@@ -184,7 +182,7 @@ operate(); displayInput.textContent = ''; sumZeroOne = 0; operatoZeroOneTwo = 0;
 
 // all clear function
 function allClearCalculation () {
-plusOrMinus = 0; dotZeroOne = 0; displayText.textContent = ''; equalZeroOne = 0;
+plusOrMinus = 0; dotZeroOne = 0; displayText.textContent = ''; equalZeroOne = 0; operateOneAtATime = 0;
 displayInput.textContent =(''); displaySolution.textContent = ''; sumZeroOne = 0; operateContainer = ''; operatoZeroOneTwo = 0; totalSum = ''; a = ''; b = '';    
 }
 
@@ -193,6 +191,7 @@ displayInput.textContent =(''); displaySolution.textContent = ''; sumZeroOne = 0
 let sumZeroOne = 0; // if var = 0 then input is 'a', if var = 1 then input is 'b'
 let operateContainer = ''; // var that stores +-/* for operate function
 let operatoZeroOneTwo = 0; // if var = 0 then no action, if var = 1 then calculate a+b, if var = 2 then calculate totalSum + a
+let operateOneAtATime = 0 // if var = 1 then only the selected operator can be used
 let totalSum = ''; // var where total of the sum is stored
 let plusOrMinus = 0; // if var = 0 then integer =+, if var = 1 then integer = -
 let dotZeroOne = 0; // if var  = 0 then dot is allowed, if var = 1 then no more dots are allowed
